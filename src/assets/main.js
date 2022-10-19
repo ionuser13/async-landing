@@ -33,7 +33,7 @@ async function fetchData(urlApi){//transforms data into an iterable object
                     </h3>
                 </div>
             </div>
-        `).slice(0, 4).join("")}
+        `).slice(0, 8).join("")}
         `;
         content.innerHTML = view;
      }
