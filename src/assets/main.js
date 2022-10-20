@@ -1,5 +1,5 @@
 const playlistAPI = "https://youtube-v31.p.rapidapi.com/playlistItems?playlistId=PLn5jU74I0Hxd1OdqbHO30SmYXphTYvy61&part=snippet&maxResults=10";
-const twtAPI = "https://twitter154.p.rapidapi.com/user/tweets?username=ionuser03&limit=40"
+const twtAPI = "https://twitter154.p.rapidapi.com/user/details?username=ionuser03"
 
 const videosContainer = null || document.getElementById("videos");
 const twitter = null || document.getElementById("twitter") 
@@ -63,19 +63,23 @@ async function fetchData2(urlApi){//transforms data into an iterable object
     try{
         const tweets = await fetchData2(twtAPI);
         let post = `
-        ${tweets.results.map(tweet => `
         <div class="group relative">
             <div class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
-                <img src="${tweet.user.profile_pic_url}" alt="${tweet.user.description}" class="w-full">
+                <img src="${tweets.profile_pic_url}" alt="${tweets.description}" class="w-full">
             </div>
             <div class="mt-4 flex justify-between">
                 <h3 class="text-sm text-gray-700">
                     <span aria-hidden="true" class="absolute inset-0"></span>
-                    ${tweet.text}
+                    ${tweets.name}
+                </h3>
+            </div>
+            <div class="mt-4 flex justify-between">
+                <h3 class="text-sm text-gray-700">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    ${tweets.description}
                 </h3>
             </div>
         </div>
-        `).slice(0, 8).join("")}
         `;
         twitter.innerHTML = post;
     }
