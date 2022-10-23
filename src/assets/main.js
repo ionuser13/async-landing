@@ -88,9 +88,3 @@ async function fetchData2(urlApi){//transforms data into an iterable object
         twitter.innerHTML = `An error has ocurred: ${error}`
     }
 })();
-
-
-// fetch(API, options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
