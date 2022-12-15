@@ -17,6 +17,9 @@ This is a simple landing page built using HTML, Tailwind CSS, and JavaScript. It
 
 - [John Chacpi](https://github.com/ionuser13) - Initial work
 
+## Contact
+You can find me on [Twitter](https://twitter.com/ionuser03)
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
