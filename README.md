@@ -1,10 +1,22 @@
-# async-landing
-A landing page as a project of the Asynchronism with JS course in Plazti
-## Description
-This landing page is a project from the Asynchronism with JS course in Platzi. The goal was to display videos from a channel/playlist using an API. The tools used were HTML, CSS Tailwind, Vanilla JS and RapidAPI.
-## Authors Aknowledgement
-The design and structure of the page was given by Platzi Team. The logic behind the API call was made by me with the help of the Teacher in the previous mentioned course. You can see the page [here](https://github.com/ionuser13/async-landing)
+# Playlist Landing Page
+
+This is a simple landing page built using HTML, Tailwind CSS, and JavaScript. Its purpose is to demonstrate how to connect to an API and show videos from a playlist.
+
+## Features
+
+- Simple, clean design using Tailwind CSS
+- Connects to an API to retrieve and display a list of videos from a playlist
+
+## Built With
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - The markup language used for creating the page structure
+- [Tailwind CSS](https://tailwindcss.com/) - The CSS framework used for styling
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - The programming language used for connecting to the API and manipulating the page content
+
+## Authors
+
+- [John Chacpi](https://github.com/ionuser13) - Initial work
+
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
-## Contact
-You can find me on [Twitter](https://twitter.com/ionuser03)
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
